@@ -37,9 +37,24 @@ gem install bundler pg pry rspec
 
 # command used to set up files for Rails to use PostgreSQL (don't run):
 # rails new rails_university --database=postgresql
+
+# from rails version 6.0.0, Webpacker has been the default Javascript manager in Rails.
+# as a result, you will need to install Webpacker and you will need to install Yarn which it depends on
+
+# installing yarn:
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# if you don't have node, run this to install yarn:
+# sudo apt update && sudo apt install yarn
+# if you already use node, install yarn like this:
+sudo apt update && sudo apt install --no-install-recommends yarn
+
+# installing webpacker:
+rails webpacker:install
 ```
 
 For more basic information on using Rails, please see both the short `rails_guide.md` which was written for this project and the Official Rails Guide.
+Also, for more information on yarn and the lastest installation instructions, please see [yarn's documentation](https://classic.yarnpkg.com/en/docs/install#debian-stable "yarn's documentation").
 
 ### Create user in PostgreSQL 11  for rails_university
 
