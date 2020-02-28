@@ -10,11 +10,11 @@ The installation of PostgreSQL is highly dependent on the OS one chooses as is R
 - [PostgreSQL 11](https://www.postgresql.org/download/ "PostgreSQL 11")
 - [PostgreSQL 11 Installation](https://wiki.postgresql.org/wiki/Apt "PostgreSQL 11 Installation")
 - [RVM](https://rvm.io/ "RVM")
-- [Ruby 2.6.2](https://www.ruby-lang.org/en/ "Ruby 2.6.2")
-- [Rails 5.2.3](https://github.com/rails/rails/tree/v5.2.3 "Rails 5.2.3")
+- [Ruby 2.7.0](https://www.ruby-lang.org/en/ "Ruby 2.7.0")
+- [Rails 6.0.2.1](https://github.com/rails/rails/tree/v6.0.2.1 "Rails 6.0.2.1")
 
 ## Set up
-### Use RVM to install Ruby 2.6.2.
+### Use RVM to install Ruby 2.7.0.
 
 ```bash
 rvm install 2.7.0
