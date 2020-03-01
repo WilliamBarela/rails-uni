@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current_program: MyString
+  degree_sought: MyString
+  auxiliary_roles: MyString
+  expected_graduation_year: 1
+  expected_graduation_semester: MyString
+  objectives_statement: MyText
+  research_interests_summary: MyText
+  role_start_date: 2020-03-01
+  role_termination_date: 2020-03-01
+  termination_reason: MyString
+  person: one
+
+two:
+  current_program: MyString
+  degree_sought: MyString
+  auxiliary_roles: MyString
+  expected_graduation_year: 1
+  expected_graduation_semester: MyString
+  objectives_statement: MyText
+  research_interests_summary: MyText
+  role_start_date: 2020-03-01
+  role_termination_date: 2020-03-01
+  termination_reason: MyString
+  person: two
