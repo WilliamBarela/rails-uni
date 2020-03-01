@@ -1,6 +1,6 @@
 class CreatePeople < ActiveRecord::Migration[6.0]
   def change
-    create_table :people, comment: "People Table: info for all members of the department (excluding role ino)" do |t|
+    create_table :people, comment: "People Table: info for all members of the department (excluding role info)" do |t|
       t.string :honorific, comment: "person honorific: Mr., Miss, Ms., Mrs., Dr., ..."
       t.string :last_name, comment: "person surname"
       t.string :middle_name, comment: "person middle name (optional)"
