@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  honorific: MyString
+  last_name: MyString
+  middle_name: MyString
+  first_name: MyString
+  suffix: MyString
+  gender: MyString
+  ttus_email: MyString
+  ttus_phone: MyString
+  ttus_termination_date: 2020-03-01
+  termination_reason: MyString
+
+two:
+  honorific: MyString
+  last_name: MyString
+  middle_name: MyString
+  first_name: MyString
+  suffix: MyString
+  gender: MyString
+  ttus_email: MyString
+  ttus_phone: MyString
+  ttus_termination_date: 2020-03-01
+  termination_reason: MyString
