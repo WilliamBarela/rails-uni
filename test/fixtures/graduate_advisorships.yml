@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  primary_advisor?: false
+  advising_initiation: 2020-03-01
+  advising_termination: 2020-03-01
+  faculty_member: one
+  graduate_student: one
+
+two:
+  primary_advisor?: false
+  advising_initiation: 2020-03-01
+  advising_termination: 2020-03-01
+  faculty_member: two
+  graduate_student: two
