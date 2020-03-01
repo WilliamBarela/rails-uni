@@ -32,3 +32,7 @@ yarn-debug.log*
 
 # ignore database config file:
 /config/database.yml
+
+# ignore generator.sh
+/specifications/generators.*
+/specifications/.generators.*
