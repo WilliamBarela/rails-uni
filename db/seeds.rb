@@ -33,11 +33,25 @@ Person.all[0..faculty].each{ |person|
     auxiliary_roles: ['Some Committee Chairperson', 'Some Committee Associate Chairperson'].tap{|a| 50.times{ a << nil}}.sample,
     objectives_statement: Faker::Lorem.paragraph_by_chars(number: 160),
     research_interests_summary: Faker::Lorem.paragraph_by_chars(number: 512),
+    role_start_date: nil,
+    role_termination_date: nil,
+    termination_reason: nil,
     person_id: person.id
   )
 }
 
-# Person.all[faculty + 1..department_members].each{ |person|
-#   GraduateStudent.create(
-#   )
-# }
+Person.all[faculty + 1..department_members].each{ |person|
+  GraduateStudent.create(
+    current_program: ['Biology','Biology','Microbiology','Microbiology'].sample,
+    degree_sought: ['MS','PhD'].sample,
+    auxiliary_roles: ['TA', 'RA'].tap{|a| 100.times{ a << nil}}.sample,
+    expected_graduation_year: nil,
+    expected_graduation_semester: nil,
+    objectives_statement: Faker::Lorem.paragraph_by_chars(number: 160),
+    research_interests_summary: Faker::Lorem.paragraph_by_chars(number: 512),
+    role_start_date: nil,
+    role_termination_date: nil,
+    termination_reason: nil,
+    person_id: person.id
+  )
+}
