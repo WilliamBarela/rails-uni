@@ -8,7 +8,13 @@
 
 Faker::Config.locale = 'en-US'
 
-20.times { 
+department_members = 200
+percent_faculty = 0.23
+
+faculty = (department_members * percent_faculty).floor
+
+
+department_members.times { 
   Person.new(
     honorific: ['Mr.', 'Mrs.', 'Ms.', 'Dr.'].sample,
     last_name: Faker::Name.unique.last_name,
@@ -20,3 +26,18 @@ Faker::Config.locale = 'en-US'
     ttus_phone: "806-834-#{Faker::PhoneNumber.subscriber_number(length: 4)}"
   ).save
 }
+
+Person.all[0..faculty].each{ |person|
+  FacultyMember.create(
+    current_title: ['Professor', 'Associate Professor', 'Assistant Professor', 'Research Assistant Professsor', 'Instructor'].sample,
+    auxiliary_roles: ['Some Committee Chairperson', 'Some Committee Associate Chairperson'].tap{|a| 50.times{ a << nil}}.sample,
+    objectives_statement: Faker::Lorem.paragraph_by_chars(number: 160),
+    research_interests_summary: Faker::Lorem.paragraph_by_chars(number: 512),
+    person_id: person.id
+  )
+}
+
+# Person.all[faculty + 1..department_members].each{ |person|
+#   GraduateStudent.create(
+#   )
+# }
