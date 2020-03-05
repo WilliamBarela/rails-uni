@@ -262,24 +262,24 @@ Models also add a timestamp to the migration files by default (which does not ha
 
 ### Controllers
 
-Controller generators must be invoked in the singular. Controller generators create both the controllers and the views which are associated with them. Unlike resource generators, they do not create the resourceful routes in `config/routes.rb`...and that's a good thing when one is making nested routes.
+Controller generators must be invoked in the plural. Controller generators create both the controllers and the views which are associated with them. Unlike resource generators, they do not create the resourceful routes in `config/routes.rb`...and that's a good thing when one is making nested routes.
 
 ```bash
-rails g controller Person
+rails g controller People
 Running via Spring preloader in process 11600
-      create  app/controllers/person_controller.rb
+      create  app/controllers/people_controller.rb
       invoke  erb
-      create    app/views/person
+      create    app/views/people
       invoke  test_unit
-      create    test/controllers/person_controller_test.rb
+      create    test/controllers/people_controller_test.rb
       invoke  helper
-      create    app/helpers/person_helper.rb
+      create    app/helpers/people_helper.rb
       invoke    test_unit
       invoke  assets
       invoke    coffee
-      create      app/assets/javascripts/person.coffee
+      create      app/assets/javascripts/people.coffee
       invoke    scss
-      create      app/assets/stylesheets/person.scss
+      create      app/assets/stylesheets/people.scss
 ```
 
 ### Resources
