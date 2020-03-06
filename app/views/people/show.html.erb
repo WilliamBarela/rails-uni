@@ -1,2 +1,10 @@
-<h1>Show a Person Here</h1>
-<h2><%=@person.last_name%></h2>
+<% name = "#{@person.honorific} #{@person.first_name} #{@person.last_name}" %>
+<% display_name = (@person.suffix.nil?) ? name : "#{name}, #{@person.suffix}" %>
+
+<section>
+  <h1><%= display_name %></h1>
+  <ul>
+    <li><a href="<%= @person.ttus_email %>"><%= @person.ttus_email %></a></li>
+    <li><%= @person.ttus_phone %></li>
+  </ul>
+</section>
