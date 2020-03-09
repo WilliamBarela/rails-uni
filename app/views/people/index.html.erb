@@ -1,5 +1,17 @@
 <h1>Show people here</h1>
 
-<% for person in @people %>
-  <h2><%= person.last_name  %></h2>
+<h1>Faculty</h1>
+<% for faculty in @faculty_members %>
+  <section>
+    <h2><%= display_name faculty %></h2>
+    <h3><%= faculty.current_title %></h3>
+  </section>
+<% end %>
+
+<h1>Graduate Students</h1>
+<% for grad_student in @grad_students %>
+  <section>
+    <h2><%= display_name grad_student %></h2>
+    <h3><%= display_degree_program grad_student %></h3>
+  </section>
 <% end %>
