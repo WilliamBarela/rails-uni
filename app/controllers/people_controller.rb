@@ -1,9 +1,6 @@
 class PeopleController < ApplicationController
   def index
-    @people = Person.all
-  end
-
-  def show
-    @person = Person.find(params[:id])
+    @faculty_members = FacultyMember.select('*').joins(:person)
+    @grad_students = GraduateStudent.select('*').joins(:person)
   end
 end
