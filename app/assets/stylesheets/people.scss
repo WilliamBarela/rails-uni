@@ -1,3 +1,68 @@
 // Place all the styles related to the People controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body{
+  display: flex;
+  font-family: "Lato", san-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+.sidenav ul {
+  list-style-type: none;
+}
+
+.sidenav ul li {
+  color: white;
+  font-size: 1.3em;
+}
+
+main {
+  margin-left: 320px;
+  height: 100%;
+  width: 100%;
+}
+
+.person-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-card {
+  display: flex;
+  width: 80%;
+  background-color: rgba(204,204,204,1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.person-picture-card {
+  height: 330px;
+  width: 220px;
+  background-color: rgba(104,104,104,1);
+}
+
+.person-picture-card img {
+  height: 100%;
+  width: auto;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
