@@ -29,7 +29,7 @@ body{
 main {
   margin-left: 320px;
   height: 100%;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .person-list {
@@ -39,7 +39,7 @@ main {
 
 .person-card {
   display: flex;
-  width: 80%;
+  width: 90%;
   background-color: rgba(204,204,204,1);
   margin-top: 10px;
   margin-bottom: 10px;
